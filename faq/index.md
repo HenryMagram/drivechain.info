@@ -3,23 +3,21 @@ layout: page
 title: Frequently Asked Questions
 ---
 
-Updated 04/2018
-
-Be sure to watch ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k), my latest YouTube video. I know many people prefer the YouTube format these days.
+Visual learners will enjoy ["Drivechain - Overview and Misconceptions"](https://www.youtube.com/watch?time_continue=5892&v=gUbGT70wy5k), a YouTube video that addresses the most common misconceptions about Drivechain.
 
 ## 0. Five Common Misconceptions
 
-Here I highlight five big hangups that people seem to have over and over.
+In the passages below, we explore the most common hangups and misconceptions that appear in the discourse on Drivechain.
 
-### i. "51% hashrate can steal BTC" ### {#i}
+### i. "Drivechain allows miners to steal a sidechain's BTC" ### {#i}
 
-It is said that "51% of the miners can steal all of the funds on the sidechain".
+While the quote above is a true statement, it is important to understand it in the context provided below. As explained below, the BTC sent to a sidechain is not categorically less secure than the BTC on the mainchain.
 
-It is true that 51% hashrate can overwhelm the 13,150 ACK requirement (ie, the ["train metaphor"](https://youtu.be/gUbGT70wy5k?t=1h13m55s)), and (if unopposed) include any withdrawal they like. Namely, they would include a withdrawal that pays them all of the sidechain's BTC. At 51% hashrate, this takes 6 months to accomplish; at 100% hashrate, it takes 3 months.
+It is true that 51% of hashrate can overwhelm the 13,150 ACK requirement (i.e., the ["train metaphor"](https://youtu.be/gUbGT70wy5k?t=1h13m55s)), and (if unopposed) include any withdrawal they like. Specifically, they could include a withdrawal that pays them all of a sidechain's BTC. Using 51% of hashrate, this would take 6 months to accomplish; using 100% of hashrate, it would take 3 months.
 
-So, it is true that 51% hashrate can steal all the BTC on the sidechain. But, already, they can steal all of the BTC on the mainchain. In a way that full nodes cannot prevent. And the mainchain theft is easier, and pays more.
+So, it is true that 51% of hashrate can steal all of a sidechain's BTC. But 51% of hasrate can already steal all of the BTC transacted on the mainchain using the strategy provided below, which full nodes cannot prevent. Furthermore, as explained below, the theft of BTC transacted on the mainchain is both easier and more lucrative than the theft of the sidechain BTC.
 
-It is to simply take the assumed attack (ie, "6 months of 51% miner-attacking, or 3 months of 100% attacking"), and use it to cause a block reorganization. Specifically, a 13,150-block reorganization.
+The mainchain theft strategy is to simply take the assumed attack (i.e, "6 months of 51% miner-attacking, or 3 months of 100% attacking") and use it to cause a block reorganization. Specifically, a 13,150-block reorganization.
 
 The reorg attack is easier in two ways. First, the reorg-attackers may work in secret. In contrast, the DC-attackers must announce the attack in advance, and then continue it openly each block. Secondly, because of their hashrate superiority (of at least 2%, in the 51%-case) they can start their new chain as many as ~526 blocks into the past.
 
@@ -27,14 +25,14 @@ The reorg attack allows miners to steal all BTC transacted on the mainchain, in 
 
 How much BTC could be stolen by a reorg attack?
 
-Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimated-transaction-volume?timespan=1year), we can expect turnover over 13,500 blocks to amount to 18.4 million BTC. This value is greater than the current number of Bitcoins in existence [~17 million], and so *all* circulating coins would be stolen (only those which hadn't moved in 6+ months would ever be safe). Interestingly, because [~3.8 million BTC are estimated to be lost forever](http://fortune.com/2017/11/25/lost-bitcoins/), 18.4 M is more BTC than could ever be deposited onto any sidechain ever.
+Well, at [200,000 BTC transacted per day](https://blockchain.info/charts/estimated-transaction-volume?timespan=1year), we can expect turnover over 13,500 blocks to amount to 18.4 million BTC. This value is greater than the current number of Bitcoins in existence [~17 million], and so *all* transacted coins would be stolen (only those which hadn't moved in 6+ months would ever be safe). Interestingly, because [~3.8 million BTC are estimated to be lost forever](http://fortune.com/2017/11/25/lost-bitcoins/), 18.4 M is likely more BTC than could ever be deposited onto any sidechain ever.
 
-Critics who raise this point, are really objecting to the entire philosophy of "optional sidechains". The purpose of sidechains is to allow the mainchain Bitcoin Core software to ignore BTC-activity on other networks -- this indifference frees up those networks to try experimental or controversial features. Critics who invoke "miners can steal", fail to understand this purpose. Since the only way to block "miner theft" is via full-node rule-enforcement, these critics are really advocating a sidechain security model where Bitcoin Core is required to download and validate all sidechain blocks on all sidechains. This would prevent miner-theft, but it turns each new sidechain into a mandatory hard fork!
+Analysts of Drivechain object to Drivechain for the reason quoted at the top of this section are ultimately objecting to the entire philosophy of "optional sidechains". The purpose of sidechains is to allow the mainchain Bitcoin Core software to be indifferent to BTC activity on other networks. That indifference frees up those networks to try experimental or controversial features. Analysts who object to Drivechain by stating "the miners can steal" fail to understand that purpose of sidechains. Since the only way to block "miner theft" is via full-node rule-enforcement, those critics are really advocating a sidechain security model where Bitcoin Core is required to download and validate all sidechain blocks on all sidechains. This would prevent miner-theft, but it turns each new sidechain into a mandatory hard fork!
 
 
 ### ii. Autonomous Miners Fallacy ### {#ii}
 
-Some people believe that miners are free to do whatever they like. This view is often simplified [perhaps for politeness reasons] as sorting miners into two "types", the "honest" type that tend to choose to do friendly things, and the "dishonest" type that tend to choose to do unfriendly things (ie, short-term, narrowly selfish, deceptive, etc).
+Some people believe that miners are free to do whatever they like. This view is often simplified [perhaps for politeness reasons] as sorting miners into two "types": the "honest" type that tends to choose to do friendly things and the "dishonest" type that tends to choose to do unfriendly things (i.e., short-term, narrowly selfish, deceptive, etc.).
 
 In reality, though, miners have no choice but to profit-maximize.
 
@@ -82,7 +80,7 @@ Not all sidechains are the same -- some are bound to be "low quality". This coul
 
 It is natural to want to "protect" people from their mistakes.
 
-But it is neither possible nor desirable. If the user can't get what they want from a sidechain, they'll get it from an Altcoin. And -- as they should! The user is sovereign.
+But it is neither possible nor desirable. If the user can't get what they want from a sidechain, they'll get it from an altcoin. And -- as they should! The user is sovereign.
 
 
 
@@ -99,7 +97,7 @@ Security is higher when:
 
 A **more important point is this**: the risk-reward decision is one which should be up to each individual user. If you don't like a particular sidechain, or sidechains in general, then you don't have to use them!
 
-But don't try to decide on behalf of other people! If each individual user is free to sell his/her BTC in exchange for an Altcoin (or for fiat), we can hardly deny users the opportunity to move *their money* between two sidechains.
+But don't try to decide on behalf of other people! If each individual user is free to sell his/her BTC in exchange for an altcoin (or for fiat), we can hardly deny users the opportunity to move *their money* between two sidechains.
 
 
 ### What negative impact could sidechains have on the mainchain (ie, Bitcoin Core)? ### {#harms}
@@ -200,11 +198,14 @@ Now, my responses:
 The most important response of all, is to point out how out-of-context this complaint is. Complaints such as these scratch the bottom of the barrel as far as relevancy. Meanwhile, Bitcoin has serious competition in the form of "dumb but popular" Altcoins (think Qwerty keybord vs. Esperanto the "best" language; VHS vs BetaMax etc), messy hard fork campaigns, and fundamental [not-resolvable] disagreements over how much it should cost to run a Bitcoin node. These are serious problems that Drivechain has a shot at solving. What is presented in the complaint above is as follows: that there might occasionally, with overwhelming advance warning, be a small mainchain reorg, supported by the economic majority, to prevent sidechain theft, if numerous people act against their own self interest all at once. Contrast that with how much "mainchain contagion" we would have if Ethereum simply displaced Bitcoin as the Internet's money.
 
 
-### Why does drivechain allow miners to deny the creation of a given sidechain? Are you against permissionless innovation? Are you a BitMain shill?? ### {#categorical-control}
+### Why does Drivechain allow miners to deny the creation of a given sidechain? Are you against permissionless innovation? Are you a BitMain shill?? ### {#categorical-control}
 
-Unlike other projects, drivechain explicitly aims to allow miners to censor certain types of smart contract. I call this feature **"categorical control"**. Simple-minded people misinterpret this design goal as an affront to permissionless innovation -- "After all", they think, "if miners can censor a type of smart contract, how can it be a permissionless system?".
+Unlike other projects, Drivechain explicitly aims to allow miners to censor certain types of smart contract. I call this feature **"categorical control"**. Simple-minded people misinterpret this design goal as an affront to permissionless innovation -- "After all", they think, "if miners can censor a type of smart contract, how can it be a permissionless system?".
 
-I have been repeating myself on this topic for years (both in person and [via YouTube lecture](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)), and [replied on bitcoin-dev about it](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014453.html), and [written about it](http://www.drivechain.info/literature/index.html#theory) on my blog (and in the BIP documentation) on several occasions. It is certainly one of the most frequently-asked-questions, especially among Bitcoin-experts who should know better.
+I have been repeating myself on this topic for years (both in person and [via YouTube lecture](https://www.youtube.com/watch?v=xGu0o8HH10U&list=PLw8-6ARlyVciMH79ZyLOpImsMug3LgNc4&index=1)), and [replied on bitcoin-dev about it](https://lists.linuxfoundation.org/pipermail/bitcoin-dev/2017-May/014453.html), and [written about it](http://www.
+
+
+.info/literature/index.html#theory) on my blog (and in the BIP documentation) on several occasions. It is certainly one of the most frequently-asked-questions, especially among Bitcoin-experts who should know better.
 
 The short answer is that **Bitcoin users might disagree with the <i>intended behavior</i> of the sidechain**. It is assumed that miners must meet the needs of users as best they can (and that, at worst, there can be confusion among miners over what it is that user want). The group "Bitcoin users" can be defined either as [1] the subset of users known as "the economic majority", or as [2] "the entire population of sincere users"; it doesn't matter.
 
@@ -525,7 +526,6 @@ I expect Drivechain to be popular with miners. Sidechains mean more transaction 
 
 If miners refuse to activate the soft fork, it is still possible for users to activate it, and force it upon the miners (just as today's users force miners to enforce all activated soft forks -- activation of past soft forks is no longer optional for miners). This is riskier, but still very safe if user-support is overwhelming. If user-support is merely lukewarm (or unmeasureable), then we might turn to the exchanges for help.
 
-The "blind merged mining" technology <del>has not been developed</del> is under development. It will <del>take an unknown amount of time to code and review probably be finished by the end of the summer</del> has recently been finished.
 
 
 ### What's the rush? Aren't you worried about bugs? ### {#rushing}
